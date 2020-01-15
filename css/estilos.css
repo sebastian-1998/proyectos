@@ -1,0 +1,208 @@
+/*le agregamos una imagen a la pagina*/
+body{
+    background-image: url('../img/quorra.png');
+}
+/*le cambiamos el color al jumbotron*/
+.jumbotron{
+    background-color: #05334c;
+    color: whitesmoke;
+}
+/*le cambiamos el color a la cabezera de los paneles*/
+.panel-heading{
+    /*!importan hace que cambie la importancia de las hojas de estilos hacemos que la nuestra sea la primordial*/
+   background-color: #05334c !important;
+    color: whitesmoke !important; 
+}
+/*reglas importantes en cuanto a los enlaces
+:link -> indica el aspecto que debe tener el enlace tal cual se ve
+:visited -> indica el aspecto que debe tener un enlace en el que no se hace nada pero que ya se ha visitado
+:hover -> indica el aspeco que debe tener el enlace cuando el mouse pasa sobre el evitar usarla para dispositivos mobiles
+:active-> indica el aspecto que debe tener el enlace mientras esta activo
+*/
+/*le cambiamos el aspecto a los enlaces*/
+.navbar-brand:link, .navbar-brand:visited{
+    color: whitesmoke !important;
+}
+.navbar-brand:hover, .navbar-brand:active{
+    color: #05334c !important;
+}
+/*le cambiamos el color a la navbar*/
+.navbar{
+    background-color: #041c2d;
+}
+/*le cambiamos el aspecto a los enlaces*/
+#navbar li a:link, #navbar li a:visited{
+    color: whitesmoke !important;
+}
+#navbar li a:hover, #navbar li a:active{
+    color: #05334c !important;
+}
+/*le cambiamos el color de fondo y de letra a los botones primarios y por defecto*/
+.btn-primary{
+    background-color: #05334c;
+    color: whitesmoke;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #2b2b2b !important;
+    color: whitesmoke;
+    border: none;
+}
+.btn-default{
+    background-color: #05334c;
+    color: whitesmoke;
+    border: none;
+}
+.btn-default:hover{
+    background-color: #2b2b2b !important;
+    color: whitesmoke;
+    border: none;
+}
+/*le cambiamos el color al dropdownmenu*/
+.dropdown-menu{
+    background-color: #041c2d;
+}
+/*.open > punta a cualquier hijo directo de open
+se apunta al primer elemento que coincide*/
+.open > a{
+    background-color: #041c2d !important;
+}
+/*le cambiamos el color al articulo*/
+.contenido_articulo{
+    background-color: whitesmoke;
+    /*padding agrega un espacio en los bordes*/
+    padding: 2em;
+}
+/*le cambiamos el color a la barra lateral del gestor*/
+.sidebar{
+    background-color: whitesmoke;
+}
+.sidebar, .gg-elemento{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.gg-elemento:hover{
+    background-color: #2b2b2b !important;
+    color: deepskyblue !important
+}
+#gestor-generico-entradas{
+    background-color: #05334c !important;
+    color: whitesmoke;
+}
+#gestor-generico-comentarios{
+    background-color: #05334c !important;
+    color: whitesmoke;
+}
+#gestor-generico-favoritos{
+    background-color: #05334c !important;
+    color: whitesmoke;
+}
+.parte_gestor-entrada{
+    background-color: #05334c !important;
+    color: whitesmoke;
+}
+/*nth-child-> permite elegir ciertos elementos dentro del conjunto*/
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th{
+    background-color: #029ac4;
+}
+.table-striped>tbody>tr>td{
+    /*borde de 1 pixel solido y color negro*/
+    border: 1px solid black;
+}
+/*before añade algo antes de la clase*/
+tbody:before{
+    /*se introduce un caracter*/
+    content: "-";
+    /*hacemos que se comporte como un elemento de caja o bloque o como un div*/
+    display: block;
+    /*se le agrega una altura*/
+    line-height: 1em;
+    /*hacemos que el color sea transparente para que no se vea feo*/
+    color: transparent;
+}
+#nueva-entrada{
+    background-color: #029ac4 !important;
+    
+}
+#nueva-entrada:hover{
+    background-color: #2b2b2b !important;
+    color: whitesmoke;
+    border: none;
+}
+.form-nueva-entrada{
+    background-color: whitesmoke;
+    padding: 2em;
+}
+.btn-buscar{
+    background-color: black;
+    color: whitesmoke;
+}
+#resultados{
+    background-color: whitesmoke !important;
+}
+.contenido_articulo, .perfil{
+    background-color: whitesmoke;
+    /*padding agrega un espacio en los bordes*/
+    padding: 2em;
+}
+.boton_subir{
+    /*se le agrega un ancho y alto*/
+    width: 0.1px;
+    height: 0.1px;
+    /*hacemos que sea transparente*/
+    opacity: 0;
+    /*en caso de desborde el contenido sera invisible*/
+    overflow: hidden;
+    /*colocamos el elemento donde deseamos*/
+    position: absolute;
+    
+    z-index: -1;
+}
+/*le damos un estilo al label*/
+#label-archivo{
+    background-color: #2b2b2b;
+    color: #029ac4;
+    /*hacemos que aparesca un icono de una mano para indicar que es un enlace funcional*/
+    cursor: pointer;
+    padding: 0.5em;
+    width: 100%;
+}
+#label-archivo:hover{
+    background-color: #05334c;
+    color: whitesmoke;
+}
+/*le cambiamos el color a los elementos del combobox que recupera la id del usuario por el nombre*/
+#recuperar_id_entrada{
+    color: black !important;
+}
+/*le cambiamos el color a la tabla del gestor de comentarios*/
+.parte-gestor-comentarios{
+    background-color: #05334c !important;
+    color: whitesmoke;
+}
+/*nth-child-> permite elegir ciertos elementos dentro del conjunto*/
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th{
+    background-color: #029ac4;
+}
+.table-striped>tbody>tr>td{
+    /*borde de 1 pixel solido y color negro*/
+    border: 1px solid black;
+}
+/*before añade algo antes de la clase*/
+tbody:before{
+    /*se introduce un caracter*/
+    content: "-";
+    /*hacemos que se comporte como un elemento de caja o bloque o como un div*/
+    display: block;
+    /*se le agrega una altura*/
+    line-height: 2em;
+    /*hacemos que el color sea transparente para que no se vea feo*/
+    color: transparent !important;
+}
+/*le cambiamos el color al form de nuevo comentario*/
+.form-nuevo-comentario{
+    background-color: whitesmoke !important;
+    padding: 2em;
+}
